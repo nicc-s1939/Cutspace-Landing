@@ -1,0 +1,8 @@
+//color
+//подставляется color:$main-color;
+$main-color: #333333;
+//или (подставляется color:var(--color-white);)
+:root{
+	--color-white:#fff;
+	--color-black:#000;
+}
