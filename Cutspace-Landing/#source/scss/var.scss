@@ -1,8 +1,46 @@
 //color
 //подставляется color:$main-color;
-$main-color: #333333;
+// $main-color: #333333;
 //или (подставляется color:var(--color-white);)
 :root{
-	--color-white:#fff;
-	--color-black:#000;
+	--color-aktive:#F78434;
+	--color-main-text:#323232;
+//icon color - start
+	--color-Authenticitiy-circle: #58BEBF;
+  --color-Authenticitiy-1:#58BEBF;
+  --color-Authenticitiy-2:#58BEBF;
+  --color-Authenticitiy-3:#58BEBF;
+  --color-building-circle:#58BEBF;
+  --color-building-1:#58BEBF;
+  --color-Enterpreneurship-circle: #F78434;
+  --color-Enterpreneurship-ellipse: #fff;
+  --color-Enterpreneurship-1:#fff;
+  --color-Enterpreneurship-2:#fff;
+  --color-Enterpreneurship-3:#fff;
+  --color-Enterpreneurship-4:#fff;
+  --color-Enterpreneurship-5:#fff;
+  --color-Kindness-circle:#58BEBF;
+  --color-Kindness-1:#58BEBF;
+  --color-Kindness-2:#58BEBF;
+  --color-Kindness-3:#58BEBF;
+  --color-Logo:#58BEBF;
+  --color-Logoipsum:#D8D8D8;
+  --color-Logoipsum2-1:#D8D8D8;
+  --color-Logoipsum2-2:#D8D8D8;
+  --color-Logoipsum2-3:#D8D8D8;
+  --color-Logoipsum2-4:#D8D8D8;
+  --color-Logoipsum2-5:#D8D8D8;
+  --color-Logoipsum2-6:#D8D8D8;
+  --color-Logoipsum2-7:#D8D8D8;
+  --color-Logoipsum3-circle:#D8D8D8;
+  --color-Logoipsum3-1:#D8D8D8;
+  --color-Logoipsum4-1:#fff;
+  --color-mail-1:#E8E8E8;
+  --color-mail-2:#E8E8E8;
+  --color-mail-3:#E8E8E8;
+  --color-mail-4:#E8E8E8;
+  --color-Perfomance-1:#58BEBF;
+  --color-Perfomance-circle:#58BEBF;
+  --color-right-1:#F78434;
+ //icon color - end
 }

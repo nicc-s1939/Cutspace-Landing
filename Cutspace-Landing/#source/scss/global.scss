@@ -1,5 +1,6 @@
 /*start global*/
 body{
+	font-family: "Poppins", sans-serif;
 }
 .wrapper{
 	min-height: 100%;
@@ -26,6 +27,8 @@ body{
 	visibility: hidden;
 }
 .container{
+	max-width: 1140px;
 	padding: 0 15px;
+	margin: 0 auto;
 }
 /*end global*/

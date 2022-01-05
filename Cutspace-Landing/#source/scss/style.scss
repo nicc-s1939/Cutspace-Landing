@@ -1,10 +1,27 @@
+//Подгружаемые стили
+			//bold
+	@font-face {
+		font-family: 'Poppins';
+		src: url('../fonts/Poppins-Bold.ttf') format('ttf');
+		font-style: normal;
+		font-weight: 700;	
+	}
+			//regular
+	@font-face {
+		font-family: 'Poppins';
+		src: url('../fonts/Poppins-Regular.ttf') format('ttf');
+		font-style: normal;
+		font-weight: 400;	
+	}
 // Файл обнуляющих стилей
 @import "nullstyle.scss";
 //Глобальные
 @import "global.scss";
 //Переменные
 @import "var.scss";
-//Части
+//Блоки
 @import "header.scss";
 @import "main.scss";
 @import "footer.scss";
+//Части
+@import "heading.scss";

@@ -1,4 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
 /*Обнуление*/
 * {
   padding: 0;
@@ -74,6 +86,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 /*start global*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -110,21 +126,164 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
+  max-width: 1140px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 /*end global*/
 :root {
-  --color-white:#fff;
-  --color-black:#000;
+  --color-aktive:#F78434;
+  --color-main-text:#323232;
+  --color-Authenticitiy-circle: #58BEBF;
+  --color-Authenticitiy-1:#58BEBF;
+  --color-Authenticitiy-2:#58BEBF;
+  --color-Authenticitiy-3:#58BEBF;
+  --color-building-circle:#58BEBF;
+  --color-building-1:#58BEBF;
+  --color-Enterpreneurship-circle: #F78434;
+  --color-Enterpreneurship-ellipse: #fff;
+  --color-Enterpreneurship-1:#fff;
+  --color-Enterpreneurship-2:#fff;
+  --color-Enterpreneurship-3:#fff;
+  --color-Enterpreneurship-4:#fff;
+  --color-Enterpreneurship-5:#fff;
+  --color-Kindness-circle:#58BEBF;
+  --color-Kindness-1:#58BEBF;
+  --color-Kindness-2:#58BEBF;
+  --color-Kindness-3:#58BEBF;
+  --color-Logo:#58BEBF;
+  --color-Logoipsum:#D8D8D8;
+  --color-Logoipsum2-1:#D8D8D8;
+  --color-Logoipsum2-2:#D8D8D8;
+  --color-Logoipsum2-3:#D8D8D8;
+  --color-Logoipsum2-4:#D8D8D8;
+  --color-Logoipsum2-5:#D8D8D8;
+  --color-Logoipsum2-6:#D8D8D8;
+  --color-Logoipsum2-7:#D8D8D8;
+  --color-Logoipsum3-circle:#D8D8D8;
+  --color-Logoipsum3-1:#D8D8D8;
+  --color-Logoipsum4-1:#fff;
+  --color-mail-1:#E8E8E8;
+  --color-mail-2:#E8E8E8;
+  --color-mail-3:#E8E8E8;
+  --color-mail-4:#E8E8E8;
+  --color-Perfomance-1:#58BEBF;
+  --color-Perfomance-circle:#58BEBF;
+  --color-right-1:#F78434;
 }
 
-/*start header*/
-p {
-  font-size: 40px;
-  padding-top: 10px;
+.header {
+  padding: 45px 0 43px 0;
+}
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/*end header*/
+.logo__icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+}
+
+.text__Logo {
+  display: inline-block;
+  color: var(--color-main-text);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.nav ul li {
+  margin-left: 42px;
+}
+
+.nav__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav__row li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-main-text);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.nav__row li a.Aktiv {
+  font-weight: 700;
+  color: var(--color-aktive);
+}
+
+.nav ul li {
+  position: relative;
+}
+.nav ul li::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background: var(--color-aktive);
+  position: absolute;
+  bottom: -6px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.nav ul li:hover::before {
+  opacity: 1;
+  bottom: 0px;
+}
+
 /*start footer*/
 /*end footer*/
+.heading {
+  color: var(--color-main-text);
+}
+.heading__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.heading__text {
+  max-width: 467px;
+  z-index: 2;
+}
+.heading__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.46;
+  letter-spacing: 0.8px;
+  margin-bottom: 25px;
+  margin-right: -180px;
+}
+.heading__tex {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.68;
+  letter-spacing: 1.15px;
+}
+.heading__img img {
+  border-radius: 40px 40px 40px 0px;
+}
