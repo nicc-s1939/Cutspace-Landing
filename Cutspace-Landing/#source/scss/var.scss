@@ -1,10 +1,13 @@
 //color
 //подставляется color:$main-color;
-// $main-color: #333333;
+// $main-color: #333333;#de752c
 //или (подставляется color:var(--color-white);)
 :root{
+  --color-wiht:#fff;
 	--color-aktive:#F78434;
+  --color-aktive-dark:#d4712c;
 	--color-main-text:#323232;
+  --color-placeholder: #BBBBBB;
 //icon color - start
 	--color-Authenticitiy-circle: #58BEBF;
   --color-Authenticitiy-1:#58BEBF;
