@@ -30,6 +30,7 @@
 		line-height: 1.68;
 		letter-spacing: 1.15px;
 		margin-bottom: 42px;
+		margin-right: 10px;
 	}
 	// .heading__img
 	&__img img{
@@ -43,6 +44,7 @@
 		box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
 		border-radius: 29px;
 		height: 58px;
+		margin-right: 10px;
 	}
 	// .heading__label
 	&__label {
@@ -56,10 +58,31 @@
 		height: 19px;
 		margin-left: 28px;
 	}
+.heading__icon-close{
+	height: 19px;
+	width: 19px;
+}
+.close{
+	height: 19px;
+	margin-right: 4px;
+	opacity: 0;
+	transform: translateY( 100% );
+  transition: all 1s ease;
+}
+.heading__icon-close use{
+	background-color: red;
+}
+.heading__icon-close:hover{
+	--color-close: var(--color-close-dark);
+}
+.heading__input:focus + .close{
+	opacity: 1;
+	transform: translateY( 0% );
+}
 	// .heading__input
 	&__input {
 		flex-grow: 1;
-		margin-right: 10px;
+		margin-right: 5px;
 		margin-left: 12px;
 	}
 	.form {
@@ -67,17 +90,27 @@
 		&__button {}
 	}
 }
-.inner{
-	flex-grow: 1;
-	display: flex;
-}
+	.inner{
+		flex-grow: 1;
+		display: flex;
+	}
 input[type="text"]{
 	color:red;
 }
 input[type="text"]::placeholder { 
 	color: var(--color-placeholder); 
 } 
-:focus::placeholder {
+
+input[type="text"]:focus::placeholder {
   transform: translateY( 200% );
   transition: transform 1s ease;
 }
+
+
+// .close{
+// 	opacity: 0;
+// }
+// :focus::placeholder {
+//   transform: translateY( 200% );
+//   transition: transform 1s ease;
+// }

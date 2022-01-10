@@ -194,6 +194,8 @@ body {
   --color-Perfomance-1:#58BEBF;
   --color-Perfomance-circle:#58BEBF;
   --color-right-1:#F78434;
+  --color-close: #58BEBF;
+  --color-close-dark: #459696;
 }
 
 .header {
@@ -308,6 +310,7 @@ body {
   line-height: 1.68;
   letter-spacing: 1.15px;
   margin-bottom: 42px;
+  margin-right: 10px;
 }
 .heading__img img {
   border-radius: 40px 40px 40px 0px;
@@ -318,6 +321,7 @@ body {
           box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
   border-radius: 29px;
   height: 58px;
+  margin-right: 10px;
 }
 .heading__label {
   display: -webkit-box;
@@ -336,11 +340,38 @@ body {
   height: 19px;
   margin-left: 28px;
 }
+.heading .heading__icon-close {
+  height: 19px;
+  width: 19px;
+}
+.heading .close {
+  height: 19px;
+  margin-right: 4px;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.heading .heading__icon-close use {
+  background-color: red;
+}
+.heading .heading__icon-close:hover {
+  --color-close: var(--color-close-dark);
+}
+.heading .heading__input:focus + .close {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
 .heading__input {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-left: 12px;
 }
 .inner {
@@ -376,7 +407,7 @@ input[type=text]::placeholder {
   color: var(--color-placeholder);
 }
 
-:focus::-webkit-input-placeholder {
+input[type=text]:focus::-webkit-input-placeholder {
   -webkit-transform: translateY(200%);
           transform: translateY(200%);
   -webkit-transition: -webkit-transform 1s ease;
@@ -385,27 +416,27 @@ input[type=text]::placeholder {
   transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
-:focus::-moz-placeholder {
+input[type=text]:focus::-moz-placeholder {
   transform: translateY(200%);
   -moz-transition: transform 1s ease;
   transition: transform 1s ease;
 }
 
-:focus:-ms-input-placeholder {
+input[type=text]:focus:-ms-input-placeholder {
   -ms-transform: translateY(200%);
       transform: translateY(200%);
   -ms-transition: transform 1s ease;
   transition: transform 1s ease;
 }
 
-:focus::-ms-input-placeholder {
+input[type=text]:focus::-ms-input-placeholder {
   -ms-transform: translateY(200%);
       transform: translateY(200%);
   -ms-transition: transform 1s ease;
   transition: transform 1s ease;
 }
 
-:focus::placeholder {
+input[type=text]:focus::placeholder {
   -webkit-transform: translateY(200%);
       -ms-transform: translateY(200%);
           transform: translateY(200%);
