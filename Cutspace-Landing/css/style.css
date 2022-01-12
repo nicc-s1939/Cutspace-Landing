@@ -322,6 +322,11 @@ body {
   border-radius: 29px;
   height: 58px;
   margin-right: 10px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .heading__label {
   display: -webkit-box;
@@ -374,6 +379,15 @@ body {
   margin-right: 5px;
   margin-left: 12px;
 }
+.form-activ {
+  -webkit-box-shadow: 0px 17px 42px rgba(88, 190, 191, 0.58);
+          box-shadow: 0px 17px 42px rgba(88, 190, 191, 0.58);
+  --color-mail-1:rgba(88, 190, 191, 0.40);
+  --color-mail-2:rgba(88, 190, 191, 0.40);
+  --color-mail-3:rgba(88, 190, 191, 0.40);
+  --color-mail-4:rgba(88, 190, 191, 0.40);
+}
+
 .inner {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;

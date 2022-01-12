@@ -45,6 +45,7 @@
 		border-radius: 29px;
 		height: 58px;
 		margin-right: 10px;
+		transition: transform 0.3s ease;
 	}
 	// .heading__label
 	&__label {
@@ -90,27 +91,24 @@
 		&__button {}
 	}
 }
-	.inner{
-		flex-grow: 1;
-		display: flex;
-	}
+.form-activ{
+	box-shadow: 0px 17px 42px rgba(88, 190, 191, 0.58);
+	--color-mail-1:rgba(88, 190, 191, 0.40);
+	--color-mail-2:rgba(88, 190, 191, 0.40);
+	--color-mail-3:rgba(88, 190, 191, 0.40);
+	--color-mail-4:rgba(88, 190, 191, 0.40);
+}
+.inner{
+	flex-grow: 1;
+	display: flex;
+}
 input[type="text"]{
 	color:red;
 }
 input[type="text"]::placeholder { 
 	color: var(--color-placeholder); 
 } 
-
 input[type="text"]:focus::placeholder {
   transform: translateY( 200% );
   transition: transform 1s ease;
 }
-
-
-// .close{
-// 	opacity: 0;
-// }
-// :focus::placeholder {
-//   transform: translateY( 200% );
-//   transition: transform 1s ease;
-// }

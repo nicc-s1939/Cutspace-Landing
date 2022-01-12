@@ -17,3 +17,12 @@ if(iconMenu){
 		menuBody.classList.toggle('_active');
 	});
 }
+// form box-shadow
+const form = document.querySelector('.heading__form');
+const input = document.querySelector('.heading__input');
+input.addEventListener('focus', function () {
+	form.classList.add('form-activ');
+})
+input.addEventListener('blur', function () {
+	form.classList.remove('form-activ');
+})
