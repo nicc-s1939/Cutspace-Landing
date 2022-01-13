@@ -186,7 +186,7 @@ body {
   --color-Logoipsum2-7:#D8D8D8;
   --color-Logoipsum3-circle:#D8D8D8;
   --color-Logoipsum3-1:#D8D8D8;
-  --color-Logoipsum4-1:#fff;
+  --color-Logoipsum4-1:white;
   --color-mail-1:#E8E8E8;
   --color-mail-2:#E8E8E8;
   --color-mail-3:#E8E8E8;
@@ -279,6 +279,7 @@ body {
 /*end footer*/
 .heading {
   color: var(--color-main-text);
+  margin-bottom: 100px;
 }
 .heading__row {
   display: -webkit-box;
@@ -459,4 +460,67 @@ input[type=text]:focus::placeholder {
   -o-transition: transform 1s ease;
   transition: transform 1s ease;
   transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.clients {
+  margin-bottom: 90px;
+  color: #D8D8D8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 0.8px;
+}
+.clients .clients__row,
+.clients .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.clients .clients__row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.clients .clients__row li + li {
+  margin-left: 10px;
+}
+.clients p {
+  display: block;
+  margin-left: 11.5px;
+}
+
+.icon__clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients1 {
+  width: 40.8px;
+  height: 41.6px;
+}
+
+.clients2 {
+  width: 28px;
+  height: 32px;
+}
+
+.clients3 {
+  width: 41.44px;
+  height: 41.44px;
+}
+
+.clients4 {
+  width: 37.6px;
+  height: 37.6px;
+  background-color: #d8d8d8;
+  border-radius: 5.6px;
 }
