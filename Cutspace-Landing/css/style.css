@@ -85,9 +85,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-/*start global*/
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: var(--color-main-text);
 }
 
 .wrapper {
@@ -131,15 +132,19 @@ body {
   margin: 0 auto;
 }
 
-/*end global*/
+.container-g {
+  margin-right: unset;
+  max-width: unset;
+  margin-right: calc(50% - 570px);
+}
+
 .button {
   display: inline-block;
   max-width: 200px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 58px;
   height: 58px;
   padding: 0 37px;
-  padding-top: 3px;
   border-radius: 29px;
   background-color: var(--color-aktive);
   color: var(--color-wiht);
@@ -152,10 +157,17 @@ body {
   background-color: var(--color-aktive-dark);
 }
 
+.title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.48;
+  letter-spacing: 0.8px;
+}
+
 :root {
   --color-wiht:#fff;
   --color-aktive:#F78434;
-  --color-aktive-dark:#d4712c;
+  --color-aktive-dark:#cf6013;
   --color-main-text:#323232;
   --color-placeholder: #BBBBBB;
   --color-Authenticitiy-circle: #58BEBF;
@@ -380,6 +392,12 @@ body {
   margin-right: 5px;
   margin-left: 12px;
 }
+.heading .form__button {
+  max-width: 200px;
+  line-height: 1;
+  padding-top: 3px;
+}
+
 .form-activ {
   -webkit-box-shadow: 0px 17px 42px rgba(88, 190, 191, 0.58);
           box-shadow: 0px 17px 42px rgba(88, 190, 191, 0.58);
@@ -523,4 +541,67 @@ input[type=text]:focus::placeholder {
   height: 37.6px;
   background-color: #d8d8d8;
   border-radius: 5.6px;
+}
+
+.objects {
+  margin-bottom: 154px;
+}
+.objects__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.objects__title {
+  margin-bottom: 20px;
+}
+.objects p {
+  line-height: 1.69;
+  letter-spacing: 1.15px;
+}
+.objects p:nth-last-of-type(1) {
+  margin-bottom: 40px;
+}
+
+.img__objects {
+  overflow: hidden;
+}
+.img__objects .img__card + .img__card {
+  margin-left: 32px;
+}
+.img__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.img__row .img__card img {
+  border-radius: 20px;
+}
+.img__row .img__card--rad img {
+  border-radius: 20px 20px 0px 20px;
+}
+.img__row img {
+  height: 550px;
+  width: 386px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text__objects {
+  max-width: 374px;
+  margin-left: 181px;
+}
+.text__objects p + p {
+  margin-top: 20px;
 }

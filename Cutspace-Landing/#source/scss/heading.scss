@@ -89,7 +89,11 @@
 	}
 	.form {
 		// .form__button
-		&__button {}
+		&__button {
+			max-width: 200px;
+			line-height: 1;
+			padding-top: 3px;
+		}
 	}
 }
 .form-activ{
