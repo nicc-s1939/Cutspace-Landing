@@ -152,9 +152,18 @@ body {
   -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-
 .button:hover {
   background-color: var(--color-aktive-dark);
+}
+
+.button-01 {
+  background-color: var(--color-wiht);
+  color: var(--color-main-text);
+  position: relative;
+}
+.button-01:hover {
+  background-color: var(--color-main-text);
+  color: var(--color-wiht);
 }
 
 .title {
@@ -170,6 +179,7 @@ body {
   --color-aktive-dark:#cf6013;
   --color-main-text:#323232;
   --color-placeholder: #BBBBBB;
+  --color-bg-sup:#58BEBF;
   --color-Authenticitiy-circle: #58BEBF;
   --color-Authenticitiy-1:#58BEBF;
   --color-Authenticitiy-2:#58BEBF;
@@ -591,6 +601,7 @@ input[type=text]:focus::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .text__objects {
   max-width: 374px;
   margin-left: 181px;
@@ -644,4 +655,64 @@ p + p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.8px;
+}
+
+.sup {
+  margin-bottom: 144px;
+  color: var(--color-wiht);
+}
+.sup__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-bg-sup);
+  border-radius: 20px;
+}
+.sup__img {
+  margin-top: 59px;
+  border-right: 25px solid var(--color-wiht);
+  border-top: 25px solid var(--color-wiht);
+  border-radius: 0px 21.6px 0px 0px;
+}
+.sup__test {
+  max-width: 364px;
+  margin: 0 auto;
+  position: relative;
+}
+.sup__test::after {
+  content: "";
+  display: inline-block;
+  width: 304px;
+  height: 304px;
+  background: url(../../img/Oval-bottom-left.svg) no-repeat;
+  position: absolute;
+  bottom: -294px;
+  left: -282px;
+}
+.sup__test::before {
+  content: "";
+  display: inline-block;
+  width: 304px;
+  height: 304px;
+  background: url(../../img/Oval-top-right.svg) no-repeat;
+  position: absolute;
+  top: -195px;
+  right: -196px;
+}
+.sup__title {
+  margin-bottom: 15px;
+}
+.sup p {
+  margin-bottom: 30px;
+}
+.sup .button + .button {
+  margin-left: 20px;
+}
+.sup .right {
+  width: 12px;
+  height: 12px;
+  margin-right: 7px;
 }

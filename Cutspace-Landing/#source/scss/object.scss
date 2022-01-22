@@ -39,16 +39,6 @@
 			background-size: cover;
 		}
 	}	
-	.img__card{
-
-		.img {
-			// .img__card
-			&__card {
-			// .img__card__info
-			&__info {}
-			}
-		}
-	}
 }
 .text {
 	// .text__objects
@@ -60,7 +50,6 @@
 			margin-bottom: 40px;
 		}		
 }
-
 p{
 	line-height: 1.69;
 	letter-spacing: 1.15px;
@@ -84,8 +73,6 @@ p + p{
 .card-info {
 	width: 242px;
 	height: 77px;	
-	// .card-info__img
-	&__img {}
 	// .card-info__icon
 	&__icon {
 		height: 45px;

@@ -1,0 +1,69 @@
+.sup {
+	margin-bottom: 144px;
+	color: var(--color-wiht);
+	// .sup__row
+	&__row {
+		display: flex;
+		align-items: center;
+		background-color: var(--color-bg-sup);
+		border-radius: 20px;
+	}
+	// .sup__img
+	&__img {
+		margin-top: 59px;
+		border-right:25px solid var(--color-wiht);
+		border-top:25px solid var(--color-wiht);
+		border-radius: 0px 21.6px 0px 0px;
+	}
+	// .sup__test
+	&__test {
+		max-width: 364px;
+		margin: 0 auto;
+		position: relative;
+		&::after{
+			content: '';
+			display: inline-block;
+			width: 304px;
+			height: 304px;
+			background: url(../../img/Oval-bottom-left.svg) no-repeat;
+			position: absolute;
+	    bottom: -294px;
+	    left: -282px;
+		}
+		&::before{
+			content: '';
+			display: inline-block;
+			width: 304px;
+			height: 304px;
+			background: url(../../img/Oval-top-right.svg) no-repeat;
+			position: absolute;
+			top: -195px;
+			right: -196px;
+		}
+	}
+	// .sup__title
+	&__title {
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 30px;
+	}
+	// .sup__btn-row
+	&__btn-row {}
+	// .sup__button
+	&__button {}
+	.button + .button{
+		margin-left: 20px;
+	}
+	.right{
+		width: 12px;
+		height: 12px;
+		margin-right: 7px;
+	}
+}
+.container {
+}
+.title {
+}
+.button {
+}

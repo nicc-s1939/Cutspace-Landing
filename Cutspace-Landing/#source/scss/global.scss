@@ -50,9 +50,19 @@ body{
 			background-color: var(--color-aktive);
 			color: var(--color-wiht);
 			transition: all 0.7s ease;
+			&:hover{
+				background-color: var(--color-aktive-dark);
+			}
 		}
-		.button:hover{
-			background-color: var(--color-aktive-dark);
+		
+		.button-01{
+			background-color: var(--color-wiht);
+			color: var(--color-main-text);
+			position: relative;
+			&:hover{
+				background-color: var(--color-main-text);
+				color: var(--color-wiht);
+			}
 		}
 //end button
 
