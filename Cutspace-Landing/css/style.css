@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1.14286rem;
   color: var(--color-main-text);
 }
 
@@ -180,6 +180,7 @@ body {
   --color-main-text:#323232;
   --color-placeholder: #BBBBBB;
   --color-bg-sup:#58BEBF;
+  --color-bg-serve:#F5F6FA;
   --color-Authenticitiy-circle: #58BEBF;
   --color-Authenticitiy-1:#58BEBF;
   --color-Authenticitiy-2:#58BEBF;
@@ -218,6 +219,14 @@ body {
   --color-right-1:#F78434;
   --color-close: #58BEBF;
   --color-close-dark: #459696;
+  --color-seller-1:#F78434;
+  --color-seller-2:#F78434;
+  --color-seller-3:#F78434;
+  --color-seller-4:#F78434;
+  --color-seller-5:#F78434;
+  --color-buyers-1:#F78434;
+  --color-buyers-2:#F78434;
+  --color-buyers-3:#F78434;
 }
 
 .header {
@@ -660,6 +669,7 @@ p + p {
 .sup {
   margin-bottom: 144px;
   color: var(--color-wiht);
+  overflow: hidden;
 }
 .sup__row {
   display: -webkit-box;
@@ -687,7 +697,7 @@ p + p {
   display: inline-block;
   width: 304px;
   height: 304px;
-  background: url(../../img/Oval-bottom-left.svg) no-repeat;
+  background: url(../img/Oval-bottom-left.svg) no-repeat;
   position: absolute;
   bottom: -294px;
   left: -282px;
@@ -697,7 +707,7 @@ p + p {
   display: inline-block;
   width: 304px;
   height: 304px;
-  background: url(../../img/Oval-top-right.svg) no-repeat;
+  background: url(../img/Oval-top-right.svg) no-repeat;
   position: absolute;
   top: -195px;
   right: -196px;
@@ -715,4 +725,107 @@ p + p {
   width: 12px;
   height: 12px;
   margin-right: 7px;
+}
+
+.serve {
+  margin-bottom: 8.07143rem;
+  position: relative;
+}
+.serve::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 137%;
+  background-color: var(--color-bg-serve);
+  position: absolute;
+  z-index: -1;
+  top: -74%;
+  left: 0;
+}
+.serve__heding {
+  text-align: center;
+}
+.serve__heding p {
+  margin-bottom: 3.21429rem;
+}
+.serve__title {
+  margin-bottom: 0.714286rem;
+}
+.serve__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.14286rem;
+     -moz-column-gap: 2.14286rem;
+          column-gap: 2.14286rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.serve__cadr {
+  background: var(--color-wiht);
+  color: var(--color-main-text);
+  padding: 3.42857rem 6.28571rem;
+  -webkit-box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+.serve__cadr p {
+  margin-bottom: 1.78571rem;
+}
+.serve__cadr-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.357143rem;
+}
+.serve__button {
+  background-color: var(--color-wiht);
+  color: var(--color-aktive);
+}
+.serve__button:hover {
+  background-color: var(--color-wiht);
+}
+
+.serve__cadr:hover {
+  background-color: var(--color-aktive);
+  color: var(--color-wiht);
+  --color-seller-1:var(--color-wiht);
+  --color-seller-2:var(--color-wiht);
+  --color-seller-3:var(--color-wiht);
+  --color-seller-4:var(--color-wiht);
+  --color-seller-5:var(--color-wiht);
+  --color-buyers-1:var(--color-wiht);
+  --color-buyers-2:var(--color-wiht);
+  --color-buyers-3:var(--color-wiht);
+}
+.serve__cadr:hover .serve__button {
+  background-color: var(--color-wiht);
+  color: var(--color-aktive);
+}
+
+@media all and (min-width: 1200px) {
+  html {
+    font-size: 39.0625%;
+  }
+
+  /* 1200/1920 * 62.5 */
+}
+@media all and (min-width: 1440px) {
+  html {
+    font-size: 46.875%;
+  }
+}
+@media all and (min-width: 1600px) {
+  html {
+    font-size: 52.0833333333%;
+  }
+}
+@media all and (min-width: 1920px) {
+  html {
+    font-size: 62.5%;
+  }
 }

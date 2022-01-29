@@ -1,6 +1,7 @@
 .sup {
 	margin-bottom: 144px;
 	color: var(--color-wiht);
+	overflow: hidden;
 	// .sup__row
 	&__row {
 		display: flex;
@@ -25,7 +26,7 @@
 			display: inline-block;
 			width: 304px;
 			height: 304px;
-			background: url(../../img/Oval-bottom-left.svg) no-repeat;
+			background: url(../img/Oval-bottom-left.svg) no-repeat;
 			position: absolute;
 	    bottom: -294px;
 	    left: -282px;
@@ -35,7 +36,7 @@
 			display: inline-block;
 			width: 304px;
 			height: 304px;
-			background: url(../../img/Oval-top-right.svg) no-repeat;
+			background: url(../img/Oval-top-right.svg) no-repeat;
 			position: absolute;
 			top: -195px;
 			right: -196px;
@@ -48,8 +49,6 @@
 	p{
 		margin-bottom: 30px;
 	}
-	// .sup__btn-row
-	&__btn-row {}
 	// .sup__button
 	&__button {}
 	.button + .button{
@@ -60,10 +59,4 @@
 		height: 12px;
 		margin-right: 7px;
 	}
-}
-.container {
-}
-.title {
-}
-.button {
 }
