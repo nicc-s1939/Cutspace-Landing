@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 1.14286rem;
+  font-size: 1rem;
   color: var(--color-main-text);
 }
 
@@ -436,7 +436,7 @@ body {
 }
 
 input[type=text] {
-  color: red;
+  color: #3b7f80;
 }
 
 input[type=text]::-webkit-input-placeholder {
@@ -805,27 +805,4 @@ p + p {
 .serve__cadr:hover .serve__button {
   background-color: var(--color-wiht);
   color: var(--color-aktive);
-}
-
-@media all and (min-width: 1200px) {
-  html {
-    font-size: 39.0625%;
-  }
-
-  /* 1200/1920 * 62.5 */
-}
-@media all and (min-width: 1440px) {
-  html {
-    font-size: 46.875%;
-  }
-}
-@media all and (min-width: 1600px) {
-  html {
-    font-size: 52.0833333333%;
-  }
-}
-@media all and (min-width: 1920px) {
-  html {
-    font-size: 62.5%;
-  }
 }
