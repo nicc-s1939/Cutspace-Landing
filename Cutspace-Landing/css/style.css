@@ -181,23 +181,10 @@ body {
   --color-placeholder: #BBBBBB;
   --color-bg-sup:#58BEBF;
   --color-bg-serve:#F5F6FA;
-  --color-Authenticitiy-circle: #58BEBF;
-  --color-Authenticitiy-1:#58BEBF;
-  --color-Authenticitiy-2:#58BEBF;
-  --color-Authenticitiy-3:#58BEBF;
+  --color-circle:#def2f2;
+  --color-inside:#58BEBF;
   --color-building-circle:#58BEBF;
   --color-building-1:#58BEBF;
-  --color-Enterpreneurship-circle: #F78434;
-  --color-Enterpreneurship-ellipse: #fff;
-  --color-Enterpreneurship-1:#fff;
-  --color-Enterpreneurship-2:#fff;
-  --color-Enterpreneurship-3:#fff;
-  --color-Enterpreneurship-4:#fff;
-  --color-Enterpreneurship-5:#fff;
-  --color-Kindness-circle:#58BEBF;
-  --color-Kindness-1:#58BEBF;
-  --color-Kindness-2:#58BEBF;
-  --color-Kindness-3:#58BEBF;
   --color-Logo:#58BEBF;
   --color-Logoipsum:#D8D8D8;
   --color-Logoipsum2-1:#D8D8D8;
@@ -214,8 +201,6 @@ body {
   --color-mail-2:#E8E8E8;
   --color-mail-3:#E8E8E8;
   --color-mail-4:#E8E8E8;
-  --color-Perfomance-1:#58BEBF;
-  --color-Perfomance-circle:#58BEBF;
   --color-right-1:#F78434;
   --color-close: #58BEBF;
   --color-close-dark: #459696;
@@ -805,4 +790,68 @@ p + p {
 .serve__cadr:hover .serve__button {
   background-color: var(--color-wiht);
   color: var(--color-aktive);
+}
+
+.choose {
+  margin-bottom: 7rem;
+}
+.choose_title {
+  text-align: center;
+  margin-bottom: 3.625rem;
+}
+.choose_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.09375rem;
+     -moz-column-gap: 1.09375rem;
+          column-gap: 1.09375rem;
+}
+.choose_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.625rem;
+  margin: -0.625rem;
+  -webkit-transition: -webkit-box-shadow 0.4s ease;
+  transition: -webkit-box-shadow 0.4s ease;
+  -o-transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+}
+.choose_item_img svg {
+  width: 4.375rem;
+  height: 4.375rem;
+}
+.choose_item_title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.625rem;
+  letter-spacing: 0.03125rem;
+  color: var(--color-main-text);
+}
+.choose_item_text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.69;
+  text-align: center;
+  letter-spacing: 0.071875rem;
+  color: var(--color-main-text);
+}
+.choose .choose_item a:hover {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 0.4375rem 1.8125rem 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 0.4375rem 1.8125rem 0px;
+}
+.choose .choose_item a:hover .choose_item_img svg {
+  --color-circle:var(--color-aktive);
+  --color-inside:var(--color-wiht);
 }
